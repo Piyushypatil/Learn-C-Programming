@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "733967666945",
+    "firebase_url": "https://c-programming-app.firebaseio.com",
+    "project_id": "c-programming-app",
+    "storage_bucket": "c-programming-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733967666945:android:a162d00d72371a50",
+        "android_client_info": {
+          "package_name": "aissms.cprogrammingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733967666945-jkb8hk4uieebjkss8hdhofl9j2f2o9rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgd0mpq0lpMT1MiZQD6w6C4E5fradwc6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733967666945-jkb8hk4uieebjkss8hdhofl9j2f2o9rb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733967666945:android:b253f9e035d467eb",
+        "android_client_info": {
+          "package_name": "com.dypiet.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733967666945-jkb8hk4uieebjkss8hdhofl9j2f2o9rb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgd0mpq0lpMT1MiZQD6w6C4E5fradwc6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733967666945-jkb8hk4uieebjkss8hdhofl9j2f2o9rb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dypiet.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Learn Programming"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".file"></activity>
+        <activity android:name=".pointer" />
+        <activity android:name=".array" />
+        <activity android:name=".definationdeclaration" />
+        <activity android:name=".functionbasic" />
+        <activity android:name=".breakcontinue" />
+        <activity android:name=".whilefor" />
+        <activity android:name=".cswitch" />
+        <activity android:name=".cif" />
+        <activity android:name=".input" />
+        <activity android:name=".operator" />
+        <activity android:name=".variable" />
+        <activity android:name=".structure" />
+        <activity android:name=".advantage" />
+        <activity android:name=".introduction" />
+        <activity android:name=".fragment.ExpandableListFragment" />
+        <activity
+            android:name=".Start"
+            android:label="Learn Programming">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PPaperViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoadPDF"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Quiz"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BranchViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

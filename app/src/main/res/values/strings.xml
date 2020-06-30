@@ -1,0 +1,609 @@
+<!DOCTYPE resources [
+
+    ]>
+<resources>
+    <string name="app_name">DYPIET Exam</string>
+    <string name="button">Button</string>
+    <string name="two" />
+    <string name="three">three</string>
+    <string name="one">one</string>
+    <string name="textview">TextView</string>
+    <string name="ans1">ans1</string>
+    <string name="ans2">ans2</string>
+    <string name="ans3">ans3</string>
+    <string name="ans4">ans4</string>
+    <string name="submit_answer">Submit Answer</string>
+    <string name="title_activity_start">Start</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="fragment_login" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_collapsed" />
+
+
+    <string name="programstructure">"/* This program prints Hello World on screen */
+
+-----------------------------
+#include &lt;stdio.h&gt;
+Void main()
+{
+  printf(''Hello World\n'');
+}
+-----------------------------
+
+
+        1 . /* This program ... */
+The symbols/* and*/ used for comment. This Comments are ignored by the compiler, and are used to provide useful information about program to humans who use it.
+
+        2. #include&lt;stdio.h&gt;
+This is a preprocessor command which tells compiler to include stdio.h file.
+
+        3. main()
+C programs consist of one or more functions. There must be one and only one function called main. The brackets following the word main indicate that it is a function and not a variable.\n
+
+        4. { }
+braces surround the body of the function, which may have one or more instructions/statements.
+
+        5. printf()
+it is a library function that is used to print data on the user screen.
+
+        6. ''Hello World \n''; is a string that will be displayed on user screen
+\n is the newline character.
+; a semicolon ends a statement.
+
+        7. return 0; return the value zero to the Operating system.
+
+        C is case sensitive language, so the names of the functions must be typed in lower case as above.
+
+        we can use white spaces, tabs &amp; new line characters to make our code easy to read
+"
+    </string>
+    <string name="variable">"
+    3.1.1 Variable Declaration
+
+  Usually Variables are declared before use either at the start of a block of code after the opening { and before any other statements or outside a function.
+
+--------------------------
+int a,b; /* global variables */
+main()
+{
+float a; /* local variables */
+}
+--------------------------
+
+Local variables can only accessed within that function only whereas Global variables can access in whole program.
+
+
+3.1.2 Variable Types
+
+  There are many 'built-in' data types in C.
+
+short int -128 to 127 (1 byte)
+
+unsigned short int 0 to 255 (1 byte)
+
+char 0 to 255 or -128 to +127 (1 byte)
+
+unsigned char 0 to 255 (1 byte)
+
+signed char -128 to 127 (1 byte)
+
+int -32,768 to +32,767 (2 bytes)
+
+unsigned int 0 to +65,535 (2 bytes)
+
+long int -2,147,483,648 to +2,147,483,647 (4 bytes)
+
+unsigned long int 0 to 4,294,967,295 (4 bytes)
+
+float single precision floating point (4 bytes)
+
+double double precision floating point (8 bytes)
+
+long double extended precision floating point (10 bytes)
+
+
+
+3.1.3 Variable Names
+
+  we can use any combination of letters and numbers for Variable and function names but it must start with a letter.
+We can use Underscore (_) as a letter in variable name and can begin with an underscore But Identifiers beginning with an underscore are reserved, And identifiers beginning with an underscore followed by a lower case letter are reserved for file scope identifiers Therefore using underscore as starting letter is not desirable.
+"</string>
+    <string name="operator">"An operator is a symbol. Compiler identifies Operator and performs specific mathematical or logical operation. C provides following operators :
+
+# Arithmetic Operators
+# Increment and Decrement Operators
+# Relational Operators
+# Logical Operators
+# Cast Operators
+# Bitwise Operators
+# Assignment Operators
+
+
+3.2.1 Arithmetic Operators
+
+* multiplication
+/ division
+% remainder after division (modulo arithmetic)
++ addition
+- subtraction and unary minus
+
+
+3.2.2 Increment and Decrement Operators
+
+Increment and decrement operators are used to add or subtract 1 from the current value of oprand.
+
+++ increment
+-- decrement
+
+Increment and Decrement operators can be prefix or postfix. In the prefix style the value of oprand is changed before the result of expression and in the postfix style the variable is modified after result.
+
+For eg.
+a = 9;
+b = a++ + 5; /* a=10 b=14 */
+a = 3;
+b = ++a + 6; /* a=10 b=15 */
+
+
+3.2.3 Relational Operators
+
+== equal.
+!= Not equal.
+> &lt;Greater than/less than
+>= greater than or equal to
+&lt;= less than or equal to
+
+
+3.2.4 Logical Operators
+
+&amp;&amp; Called Logical AND operator. If both the operands are non-zero, then condition becomes true.
+
+|| Called Logical OR Operator. If any of the two operands is non-zero, then condition becomes true.
+
+! Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true, then Logical NOT operator will make false.
+
+
+3.2.5 Cast Operators
+
+Cast operators are used to convert a value from one to another type.
+(float) sum;   converts type to float
+(int) fred;   converts type to int
+
+
+3.2.6 Bitwise Operators
+
+Bitwise operators performs operation on actual bits present in each byte of a variable. Each byte contain 8 bits, each bit can store the value 0 or 1
+
+~ one's complement
+&amp; bitwise AND
+^ bitwise XOR
+| bitwise OR
+&lt;&lt; left shift (binary multiply by 2)
+>> right shift (binary divide by 2)
+
+        
+3.2.7 Assignment Operators
+
+= assign
++= assign with add
+-= assign with subtract
+*= assign with multiply
+/= assign with divide
+%= assign with remainder
+>>= assign with right shift
+&lt;&lt;= assign with left shift
+&amp;= assign with bitwise AND
+^= assign with bitwise XOR
+|= assign with bitwise OR
+
+For example,
+a = a + 64; is same as
+a += 64;
+"</string>
+
+    <string name="input">"4.1.1 Formatted Output - printf
+
+It takes text and values from within the program and sends it out onto the screen.
+
+printf(''%f is your weight\n'', w);
+In the above program statement:
+
+''%f is your weight\n'' is the control string
+w   is the variable to be printed
+%f   meaning that a floating point value is to be printed.
+The number of conversion specifications and the number of variables following the control string must be same, and that the conversion character is correct for the type of the parameter.
+
+
+4.1.2 Formatted Input - scanf
+
+scanf is used to get input from user and to store it in the specified variable(s).
+scanf(''%d'', &amp;x);
+read a decimal integer from the keyboard and store the value in the memory address of the variable x."</string>
+
+    <string name="cif">"5.1.1 if statement
+
+An if statement contains a Boolean expression and block of statements enclosed within braces.
+
+Structure of if statement :
+if (boolean expression )
+/* if expression is true */
+  statements... ; /* Execute statements */
+If the Boolean expression is true then statement block is executed otherwise (if false) program directly goes to next statement without executing Statement block.
+
+
+5.1.2 if...else statement
+
+If statement block with else statement is known as as if...else statement. Else portion is non-compulsory.
+
+Structure of if...else
+
+if(condition)
+{
+  statements...
+}
+else
+{
+  statements...
+}
+If the condition is true, then compiler will execute the if block of statements, if false then else block of statements will be executed.
+
+We can use multiple if-else for one inside other this is called as Nested if-else.
+"</string>
+
+    <string name="cswitch">"switch()
+
+A switch statement is used instead of nested if...else statements. It is multiple branch decision statement of C. A switch statement tests a variable with list of values for equivalence. Each value is called a case.
+
+The case value must be a constant integer.
+
+Structure of switch() statement :
+switch (expression)
+{
+  case value: statements...
+  case value: statements...
+  default : statements...
+}
+
+Individual case keyword and a semi-colon (:) is used for each constant. Switch tool is used for skipping to particular case, after jumping to that case it will execute all statements from cases beneath that case this is called as ''Fall Through''.
+
+In the example below, for example, if the value 2 is entered, then the program will print two one something else!
+
+int main()
+{
+  int i;
+  printf(''Enter an integer: '');
+  scanf(''%d'',&amp;i);   switch(i)
+  {
+    case 4: printf(''four ''); break;
+    case 3: printf(''three ''); break;
+    case 2: printf(''two '');
+    case 1: printf(''one '');
+    default: printf(''something else!'');
+  }
+  return 0;
+}
+
+To avoid fall through, the break statements are necessary to exit the switch. If value 4 is entered, then in case 4 it will just print four and ends the switch.
+
+The default label is non-compulsory, It is used for cases that are not present.
+
+"</string>
+
+    <string name="whilefor">"while loop
+
+The while loop calculates the expression before every loop. If the expression is true then block of statements is executed, so it will not execute If the condition is initially false. It needs the parenthesis like the if statement.
+
+while ( expression )
+/* while expression is true do following*/
+  statements... ;
+
+
+Do While loop
+
+This is equivalent to a while loop, but it have test condition at the end of the loop. The Do while loop will always execute at least once.
+
+do
+  statements ;
+while ( expression );
+/* while expression is true do...*/
+
+        
+For loop
+
+This is very widely held loop.
+For loops work like the corresponding while loop shown in the above example. The first expression is treated as a statement and executed, then the second expression is test or condition which is evaluated to see if the body of the loop should be executed. The third expression is increment or decrement which is performed at the end of every iteration/repetition of the loop.
+
+for (expr1; expr2; expr3)
+  statements...;
+
+  In while loop it can happen that the statement will never execute But In the do-while loop, test condition is based at the end of loop therefore the block of statement will always execute at least once. This is the main difference between the while and the do-while loop.
+
+  For example, to execute a statement 5 times:
+
+for (i = 0; i &lt; 5; i++)
+  printf(''%d\\n'',i);
+
+Another way of doing this is:
+i = 5;
+while (i--)
+  statements;
+
+While using this method, make sure that value of i is greater than zero, or make the test i-->0.
+
+"</string>
+
+    <string name="breakcontinue">"5.5.1 Break statement
+
+Break statement is usually used to terminate a case in the switch statement.
+Break statement in loops to instantly terminates the loop and program control goes to the next statement after the loop.
+
+If break statement is used in nested loops (i.e., loop within another loop), the break statement will end the execution of the inner loop and Program control goes back to outer loop.
+
+Syntax :
+break;
+
+
+5.5.2 Continue statement
+
+In C programming language the continue statement works slightly similar to the break statement. The continue restarts the loop with the next value of item. All the line code below continue statement is skips.
+
+Syntax :
+continue;
+
+In the for loop, continue statement skips the test condition and increment value of the variable to execute again and In the while and do...while loops, continue skips all the statements and program control goes to at the end of loop for tests condition.
+
+"</string>
+
+    <string name="functionbasic">"6.1.1 Building Blocks of Programs
+
+Functions like main, printf and scanf, We have already come through.
+All C programs made up of one or more functions. There must be one and only one main function. All functions are at the same level - there is no nesting.
+
+        
+6.1.2 Return Value
+
+Including main All functions can return a value,.
+Void Return type is specified if fuction is returning no value. Functions can return arithmetic values (int, float etc.), pointers structures, unions, or will not return anything (void) But they cannot return an array or a function.
+
+        
+6.1.3 Function Parameters
+
+Any function (as well as main) can receive some values called parameters. While calling a function we must pass values of parameters.
+
+Format of Function :-
+&lt;return_type&gt; &lt;function_name&gt;(parameters...)
+{
+}
+
+Only Values of the parameters to the function at the time of calling it
+
+If, In definition of function contains void as parameter then function will not accept any parameter.
+
+Calling the expressions specified as arguments in a function call and the variables listed as parameters in the function definition is very usual. For example, in the following call of function, the expressions x and y*2 are the arguments passed to the function. The values of the x and y will be copied into the parameters p and q. The variable given in the function definition are called as formal argument and the expression given in the function call are called as the actual argument .
+
+cal_area(a, b*2); "</string>
+
+    <string name="definationdeclaration">"A function definition contains function name, parameters, its code and return type and A function declaration contains only name and return type.
+User can define a function only once but it can be declared several times.
+
+declaration of function
+Syntax :
+&lt;return_type&gt;&lt;function_name&gt;(arguments... );
+
+/* Declaration of area() */
+
+int area(int x, int y);
+int main()
+{
+int x=10, y=25;   printf(''%d\n'',area(x,y)));
+  return 0;
+}
+
+
+Definition of function
+syntax
+&lt;return_type&gt;&lt;function_name&gt;(arguments)
+{
+Body of function;
+}
+
+/* Definition of area() */
+
+int area(int x, int y)
+{
+  int z;
+  z = x*y;
+  retrun z; }
+
+"</string>
+
+    <string name="array">"8.1 Arrays
+
+Array is a collection of similar data type items. Arrays are used to store group of data of same datatype. Arrays can of any datatype. Arrays must have constant size. Continuous memory locations are used to store array. Array index always starts with 0.
+
+Example for Arrays:
+int a[5]; // integer array
+char a[5]; // character(string) array
+
+Types of Arrays:
+# One Dimensional Array
+# Two Dimensional Array
+# Multi Dimensional Array
+
+        
+8.1.1 One Dimensional Array
+
+Array declaration
+int age [5];
+
+Array initialization
+int age[5]={0, 1, 2, 3, 4, 5};
+
+Accessing array
+age[0]; /0_is_accessed/
+age[1]; /1_is_accessed/
+age[2]; /2_is_accessed/
+
+
+8.1.2 Two Dimensional Array
+
+Two dimensional array is combination of rows n columns.
+Array declaration
+int arr[2][2];
+
+Array initialization
+int arr[2][2] = {{1,2}, {3,4}};
+
+Accessing array
+arr [0][0] = 1;
+arr [0][1] = 2;
+arr [1][0] = 3;
+arr [1][1] = 4;
+
+
+8.1.3 Multi Dimensional Array
+
+C programming language allows programmer to create arrays of arrays known as multidimensional arrays.
+For example:
+float a[2][4][3];
+"</string>
+
+    <string name="pointer">"8.2 Pointer
+
+Pointer is a variable that stores the address of another variable. They can make some things much easier, help improve your program's efficiency, and even allow you to handle unlimited amounts of data.
+
+C Pointer is used to allocate memory dynamically i.e. at run time. The variable might be any of the data type such as int, float, char, double, short etc.
+
+Syntax : Pointers require a bit of new syntax because when you have a pointer, you need the ability to both request the memory location it stores and the value stored at that memory location.
+data_type *ptr_name;
+
+Example :
+int *a; char *a;
+Where, * is used to denote that ''a'' is pointer variable and not a normal variable.
+
+Key points to remember about pointers in C:
+
+# Normal variable stores the value whereas pointer variable stores the address of the variable.
+
+# The content of the C pointer always be a whole number i.e. address.
+
+# Always C pointer is initialized to null, i.e. int *p = null.
+
+# The value of null pointer is 0.
+
+# &amp; symbol is used to get the address of the variable.
+
+# * symbol is used to get the value of the variable that the pointer is pointing to.
+
+# If pointer is assigned to NULL, it means it is pointing to nothing.
+
+# Two pointers can be subtracted to know how many elements are available between these two pointers.
+
+# But, Pointer addition, multiplication, division are not allowed.
+
+# The size of any pointer is 2 byte (for 16 bit compiler).
+
+Example program for pointer in C:
+
+#include
+int main()
+{
+int *ptr, q;
+  q = 50;
+
+  /* address of q is assigned to ptr */
+  ptr = q;
+
+          /* display q's value using ptr variable */
+  printf("%d", *ptr);
+  return 0;
+}
+
+NULL Pointers
+It is always a good practice to assign a NULL value to a pointer variable in case you do not have exact address to be assigned. This is done at the time of variable declaration. A pointer that is assigned NULL is called a null pointer. Eg : int *ptr = NULL;
+The value of ptr is 0
+
+Pointer Arithmetic
+
+As you understood pointer is an address which is a numeric value; therefore, you can perform arithmetic operations on a pointer just as you can a numeric value. There are four arithmetic operators that can be used on pointers: ++, --, +, and -.
+
+Example :
+ptr++;
+ptr--;
+ptr+21;
+ptr-10;
+
+If a char pointer pointing to address 100 is incremented (ptr++) then it will point to memory address 101
+"</string>
+
+    <string name="file">"10.1.1 File Pointers
+
+
+It is not enough to just display the data on the screen. We need to save it because memory is volatile and its contents would be lost once program terminated, so if we need some data again there are two ways one is retype via keyboard to assign it to particular variable, and other is regenerate it via programmatically both options are tedious. At such time it becomes necessary to store the data in a manner that can be later retrieved and displayed either in part or in whole. This medium is usually a ''file'' on the disk.
+
+Introduction to file
+	Until now we have been using the functions such as scanf,printf, getch, putch etc to read and write data on the variable and arrays for storing data inside the programs. But this approach poses the following programs.
+1.	The data is lost when program terminated or variable goes out of scope.
+2.	Difficulty to use large volume of data.
+
+We can overcome these problems by storing data on secondary devices such as Hard Disk. The data is storage on the devices using the concept of ''file''.
+
+	 A file is collection of related records, a record is composed of several fields and field is a group of character.
+
+The most straightforward use of files is via a file pointer.
+
+  FILE *fp;
+fp is a pointer to a file.
+
+The type FILE, is not a basic type, instead it is defined in the header file stdio.h , this file must be included in your program.
+
+
+10.1.2 File Operations
+
+1.	Create a new file.
+2.	Open an existing file
+3.	Read from file
+4.	Write to a file
+5.	Moving a specific location in a file(Seeking)
+6.	Closing File
+
+
+10.1.3 Opening a File
+
+fp = fopen(filename, mode);
+
+The filename and mode are both strings.
+
+Here modes can be
+"r" read
+"w" write, overwrite file if it exists
+"a" write, but append instead of overwrite
+"r+" read &amp; write, do not destroy file if it exists
+"w+" read &amp; write, but overwrite file if it exists
+"a+" read &amp; write, but append instead of overwrite
+"b" may be appended to any of the above to force the file to be opened in binary mode rather than text mode.
+
+Eg.
+FILE *fp;
+	fp=fopen(''input.txt'',''r'');
+	//Opens inputs.txt file in read mode
+	fclose(fp); //close file
+
+Sequential file access is performed with the following library functions.
+
+1. fopen() - Create a new file
+2. fclose() - Close file
+3. getc() - Read character from file
+4. putc() - Write character to a file
+5. getw() - Read Integer from file
+6. putw() - Write Integer to a file
+7. fprintf() - Write set of data values
+8. fscanf() - Read set of data values
+
+"</string>
+
+
+</resources>

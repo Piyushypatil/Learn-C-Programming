@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_gravity="top" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_gravity="top" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="   Introduction "
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:layout_margin="10dp"
+                android:text="           The C programming language is a general-purpose, high-level language (generally denoted as structured language). C programming language was at first developed by Dennis M. Ritchie at At &amp; T Bell Labs. \n
+            \n
+            C is one of the most commonly used programming languages. It is simple and efficient therefore it become best among all. It is used in all extents of application, mainly in the software development. \n
+            \n
+            Many software's &amp; applications as well as the compilers for other programming languages are written in C also Operating Systems like Unix, DOS and Windows are written in C. \n
+            \n
+            C has many powers, it is simple, stretchy and portable, and it can control System Hardware easily. It is also one of the few languages to have an international standard, ANSI C."
+
+
+                />
+            - TextView for Days 1 to 7 in here -->
+
+        </LinearLayout>
+
+        <!-- Last TextView in here -->
+    </ScrollView>
+</LinearLayout>
